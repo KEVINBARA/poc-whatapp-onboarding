@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${GOVDB_URL}
+    username: ${GOVDB_USER}
+    password: ${GOVDB_PASSWORD}
+    hikari:
+      max-lifetime: 600000
+      idle-timeout: 300
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+twillio:
+  username: ${TWILLIO_USER}
+  password: ${TWILLIO_PASS}
